@@ -36,6 +36,11 @@ void printArray(const T& pArray, const int n){
 }
 template<class T>
 void insertSort(T* pArray, const int n){
+	/*
+	   Best-time case complexity O(n)
+	   Worst-time case complexity O(n^2)
+	   Best use case: small list + linked list
+	*/
 	T temp;
 	for(unsigned int i = 1; i < n; i++){
 		T cur = pArray[i];
